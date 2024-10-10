@@ -32,7 +32,7 @@ def main():
     parser.add_argument("--octaves", action="store", type=int, required=False,default = 2)
     parser.add_argument("--lacunarity", action="store", type=float, required=False,default=6.0)
     parser.add_argument("--persistence", action="store", type=float, required=False,default=0.75)
-    parser.add_argument("--length", action="store", type=float, required=False,default=1024, nargs="?")
+    parser.add_argument("--length", action="store", type=float, required=False,default=30000, nargs="?")
 
     args = parser.parse_args()
     the_args = vars(args)
